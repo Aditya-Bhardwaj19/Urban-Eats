@@ -1,0 +1,12 @@
+import {createMenuItem, getMenuItems, updateMenuItem, deleteMenuItem, getMenuItemById, totalMenuItems} from "../controllers/menu.js";
+import express from "express";
+import authMiddleware from "../middleware/auth.js";
+import isAdmin from "../middleware/admin.js";
+const router = express.Router();
+router.post('/create', authMiddleware, isAdmin, createMenuItem);
+router.get('/get', getMenuItems);
+router.get('/get/:id', getMenuItemById);
+router.put('/update/:id', authMiddleware, isAdmin, updateMenuItem);
+router.delete('/delete/:id', authMiddleware, isAdmin, deleteMenuItem);
+router.get("/total", authMiddleware, isAdmin, totalMenuItems);
+export default router;
