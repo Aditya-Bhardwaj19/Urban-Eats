@@ -8,7 +8,7 @@ A production-ready, full-stack restaurant management platform built with Node.js
 ## 🚀 Live Demo & Deployment
 
 - 🌐 **Frontend App (Netlify)**: [Live Frontend](https://restromaniahub.netlify.app/)
-- ⚙️ **Backend API (Render)**: `http://localhost:5000/api`
+- ⚙️ **Backend API (Render)**: `https://urban-eats-backk.onrender.com/api`
 
 ---
 
@@ -102,7 +102,7 @@ STRIPE_SECRET_KEY=sk_test_51...
 
 #### **Frontend `.env`** (`frontend/.env`):
 ```env
-REACT_APP_API_URL=http://localhost:5000/api
+REACT_APP_API_URL=https://urban-eats-backk.onrender.com/api
 CI=false
 ```
 

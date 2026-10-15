@@ -12,7 +12,7 @@ const CustomerOrders = () => {
   const token = localStorage.getItem("token");
   const user = JSON.parse(localStorage.getItem("user"));
 
-  const API_BASE = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+  const API_BASE = process.env.REACT_APP_API_URL || 'https://urban-eats-backk.onrender.com/api';
 
   const fetchOrders = async () => {
     try {

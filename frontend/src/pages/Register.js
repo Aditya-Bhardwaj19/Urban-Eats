@@ -23,7 +23,7 @@ function Register() {
             return;
         }
         setLoading(true);
-        const API_BASE = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+        const API_BASE = process.env.REACT_APP_API_URL || 'https://urban-eats-backk.onrender.com/api';
         axios.post(`${API_BASE}/users/register`, { name, email, password, role })
             .then(response => {
                 console.log('Registration successful:', response.data);

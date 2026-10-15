@@ -185,7 +185,7 @@ function CustomerMenu() {
   const { cartItems, addToCart, removeFromCart } = useContext(CartContext);
   const { toggleFavorite, isFavorite } = useContext(FavoritesContext);
 
-const API_BASE = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_BASE = process.env.REACT_APP_API_URL || 'https://urban-eats-backk.onrender.com/api';
 
   const fetchMenu = async () => {
     const res = await axios.get(`${API_BASE}/menu/get`);

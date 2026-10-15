@@ -19,7 +19,7 @@ function Login() {
       return;
     }
     setLoading(true);
-    const API_BASE = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+    const API_BASE = process.env.REACT_APP_API_URL || 'https://urban-eats-backk.onrender.com/api';
     axios.post(`${API_BASE}/users/login`, { email, password })
       .then(response => {
         console.log('Login successful:', response.data);
